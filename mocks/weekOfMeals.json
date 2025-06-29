@@ -1,0 +1,244 @@
+{
+  "monday": {
+    "breakfast": {
+      "description": "Oatmeal with berries and honey",
+      "website": "https://www.allrecipes.com/recipe/oatmeal-berries",
+      "ingredients": {
+        "rolled oats": "0.5 cups",
+        "mixed berries": "0.25 cups",
+        "honey": "2 tablespoons",
+        "milk": "1 cup"
+      }
+    },
+    "lunch": {
+      "description": "Grilled chicken Caesar salad",
+      "website": "https://www.foodnetwork.com/chicken-caesar-salad",
+      "ingredients": {
+        "chicken breast": "1 piece",
+        "romaine lettuce": "2 cups",
+        "caesar dressing": "3 tablespoons",
+        "parmesan cheese": "0.25 cups",
+        "croutons": "0.5 cups"
+      }
+    },
+    "dinner": {
+      "description": "Spaghetti with marinara sauce",
+      "website": "https://www.tasty.co/recipe/classic-spaghetti-marinara",
+      "ingredients": {
+        "spaghetti pasta": "4 ounces",
+        "marinara sauce": "2 cups",
+        "ground beef": "0.5 pounds",
+        "onion": "1 medium",
+        "garlic": "3 cloves"
+      }
+    }
+  },
+  "tuesday": {
+    "breakfast": {
+      "description": "Greek yogurt with granola",
+      "website": "https://www.healthline.com/greek-yogurt-granola",
+      "ingredients": {
+        "greek yogurt": "1 cup",
+        "granola": "0.5 cups",
+        "fresh fruit": "0.5 cups"
+      }
+    },
+    "lunch": {
+      "description": "Turkey and avocado wrap",
+      "website": "https://www.eatingwell.com/turkey-avocado-wrap",
+      "ingredients": {
+        "turkey slices": "4 ounces",
+        "avocado": "1 medium",
+        "tortilla wrap": "1 large",
+        "lettuce": "1 cup",
+        "tomato": "1 medium"
+      }
+    },
+    "dinner": {
+      "description": "Baked salmon with roasted vegetables",
+      "website": "https://www.delish.com/baked-salmon-vegetables",
+      "ingredients": {
+        "salmon fillet": "6 ounces",
+        "broccoli": "1 cup",
+        "carrots": "2 medium",
+        "olive oil": "2 tablespoons",
+        "lemon": "1 whole"
+      }
+    }
+  },
+  "wednesday": {
+    "breakfast": {
+      "description": "Scrambled eggs with toast",
+      "website": "https://www.bbcgoodfood.com/perfect-scrambled-eggs",
+      "ingredients": {
+        "eggs": "2 large",
+        "butter": "1 tablespoon",
+        "bread": "2 slices",
+        "milk": "2 tablespoons",
+        "salt": "1 pinch"
+      }
+    },
+    "lunch": {
+      "description": "Quinoa bowl with black beans",
+      "website": "https://www.loveandlemons.com/quinoa-black-bean-bowl",
+      "ingredients": {
+        "quinoa": "0.5 cups",
+        "black beans": "0.5 cups",
+        "bell pepper": "1 medium",
+        "corn": "0.25 cups",
+        "lime": "1 whole"
+      }
+    },
+    "dinner": {
+      "description": "Beef stir-fry with rice",
+      "website": "https://www.recipetineats.com/beef-stir-fry",
+      "ingredients": {
+        "beef strips": "8 ounces",
+        "jasmine rice": "1 cup",
+        "mixed vegetables": "2 cups",
+        "soy sauce": "3 tablespoons",
+        "garlic": "2 cloves"
+      }
+    }
+  },
+  "thursday": {
+    "breakfast": {
+      "description": "Smoothie bowl with banana and spinach",
+      "website": "https://www.minimalistbaker.com/green-smoothie-bowl",
+      "ingredients": {
+        "banana": "1 large",
+        "spinach": "1 cup",
+        "greek yogurt": "0.5 cups",
+        "almond milk": "0.25 cups",
+        "granola": "0.25 cups"
+      }
+    },
+    "lunch": {
+      "description": "Caprese sandwich with basil",
+      "website": "https://www.foodandwine.com/caprese-sandwich",
+      "ingredients": {
+        "mozzarella": "4 ounces",
+        "tomato": "1 large",
+        "fresh basil": "10 leaves",
+        "ciabatta bread": "1 roll",
+        "balsamic glaze": "2 tablespoons"
+      }
+    },
+    "dinner": {
+      "description": "Chicken curry with naan bread",
+      "website": "https://cafedelites.com/easy-chicken-curry",
+      "ingredients": {
+        "chicken thighs": "1 pound",
+        "curry powder": "2 tablespoons",
+        "coconut milk": "1 can",
+        "onion": "1 medium",
+        "naan bread": "2 pieces"
+      }
+    }
+  },
+  "friday": {
+    "breakfast": {
+      "description": "Pancakes with maple syrup",
+      "website": "https://www.kingarthurbaking.com/classic-pancakes",
+      "ingredients": {
+        "flour": "1 cup",
+        "eggs": "2 large",
+        "milk": "1 cup",
+        "baking powder": "2 teaspoons",
+        "maple syrup": "0.25 cups"
+      }
+    },
+    "lunch": {
+      "description": "Mediterranean quinoa salad",
+      "website": "https://www.cookieandkate.com/mediterranean-quinoa-salad",
+      "ingredients": {
+        "quinoa": "1 cup",
+        "cucumber": "1 medium",
+        "cherry tomatoes": "1 cup",
+        "feta cheese": "0.5 cups",
+        "olive oil": "3 tablespoons"
+      }
+    },
+    "dinner": {
+      "description": "Pizza margherita",
+      "website": "https://www.seriouseats.com/pizza-margherita-recipe",
+      "ingredients": {
+        "pizza dough": "1 ball",
+        "mozzarella": "8 ounces",
+        "tomato sauce": "0.5 cups",
+        "fresh basil": "15 leaves",
+        "olive oil": "2 tablespoons"
+      }
+    }
+  },
+  "saturday": {
+    "breakfast": {
+      "description": "French toast with berries",
+      "website": "https://www.allrecipes.com/classic-french-toast",
+      "ingredients": {
+        "bread": "4 slices",
+        "eggs": "3 large",
+        "milk": "0.5 cups",
+        "vanilla": "1 teaspoon",
+        "mixed berries": "1 cup"
+      }
+    },
+    "lunch": {
+      "description": "Fish tacos with coleslaw",
+      "website": "https://www.bonappetit.com/fish-tacos-coleslaw",
+      "ingredients": {
+        "white fish": "1 pound",
+        "corn tortillas": "6 pieces",
+        "cabbage": "2 cups",
+        "lime": "2 whole",
+        "cilantro": "0.25 cups"
+      }
+    },
+    "dinner": {
+      "description": "BBQ ribs with corn on the cob",
+      "website": "https://www.weber.com/bbq-ribs-recipe",
+      "ingredients": {
+        "pork ribs": "2 pounds",
+        "bbq sauce": "1 cup",
+        "corn on the cob": "4 ears",
+        "butter": "4 tablespoons",
+        "brown sugar": "0.25 cups"
+      }
+    }
+  },
+  "sunday": {
+    "breakfast": {
+      "description": "Eggs Benedict with hollandaise",
+      "website": "https://www.foodnetwork.com/eggs-benedict-recipe",
+      "ingredients": {
+        "english muffins": "2 whole",
+        "canadian bacon": "4 slices",
+        "eggs": "4 large",
+        "butter": "0.5 cups",
+        "lemon juice": "2 tablespoons"
+      }
+    },
+    "lunch": {
+      "description": "Chicken soup with crackers",
+      "website": "https://www.tasteofhome.com/homemade-chicken-soup",
+      "ingredients": {
+        "chicken breast": "1 pound",
+        "carrots": "3 medium",
+        "celery": "2 stalks",
+        "onion": "1 medium",
+        "crackers": "1 sleeve"
+      }
+    },
+    "dinner": {
+      "description": "Roast beef with mashed potatoes",
+      "website": "https://www.epicurious.com/roast-beef-mashed-potatoes",
+      "ingredients": {
+        "beef roast": "3 pounds",
+        "potatoes": "2 pounds",
+        "butter": "0.5 cups",
+        "milk": "0.5 cups",
+        "rosemary": "2 sprigs"
+      }
+    }
+  }
+}
