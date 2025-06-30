@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routers import health
+from api import health, generateMealPlan
 
 app = FastAPI(
     title="Meal Planner API",
@@ -9,6 +9,7 @@ app = FastAPI(
 
 # Include routers
 app.include_router(health.router)
+app.include_router(generateMealPlan.router)
 
 
 @app.get("/")

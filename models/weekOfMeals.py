@@ -1,56 +1,45 @@
-from typing import Optional, Dict, Any
+from typing import Optional, List
+from pydantic import BaseModel, Field
 
-
-class MealData:
+class IngredientData(BaseModel):
+    """Represents an ingredient with its name and quantity."""
+    
+    name: str
+    quantity: str  # e.g., "2 cups", "1 tablespoon", etc.
+    
+class MealData(BaseModel):
     """Represents a single meal with description, website link, and ingredients."""
     
-    def __init__(self, description: Optional[str] = None, website: Optional[str] = None, ingredients: Optional[Dict[str, str]] = None):
-        self.description = description
-        self.website = website
-        self.ingredients = ingredients or {}
-    
-    def __str__(self):
-        return f"{self.description}" + (f" (Link: {self.website})" if self.website else "")
-    
-    def __repr__(self):
-        return f"MealData(description='{self.description}', website='{self.website}', ingredients={self.ingredients})"
+    description: Optional[str] = None
+    website: Optional[str] = None
+    ingredients: Optional[List[IngredientData]] = None
 
 
-class DayOfMeals:
+class DayOfMeals(BaseModel):
     """Represents meals for a single day with breakfast, lunch, and dinner."""
     
-    def __init__(self, breakfast: Optional[MealData] = None, lunch: Optional[MealData] = None, dinner: Optional[MealData] = None):
-        self.breakfast = breakfast or MealData()
-        self.lunch = lunch or MealData()
-        self.dinner = dinner or MealData()
+    breakfast: MealData = Field(default_factory=MealData)
+    lunch: MealData = Field(default_factory=MealData)
+    dinner: MealData = Field(default_factory=MealData)
     
-    def __str__(self):
-        return f"Breakfast: {self.breakfast}, Lunch: {self.lunch}, Dinner: {self.dinner}"
-    
-    def __repr__(self):
-        return f"DayOfMeals(breakfast={self.breakfast!r}, lunch={self.lunch!r}, dinner={self.dinner!r})"
 
-
-class WeekOfMeals:
+class WeekOfMeals(BaseModel):
     """Represents a week's worth of meals from Monday to Sunday."""
     
-    def __init__(self):
-        self.monday = DayOfMeals()
-        self.tuesday = DayOfMeals()
-        self.wednesday = DayOfMeals()
-        self.thursday = DayOfMeals()
-        self.friday = DayOfMeals()
-        self.saturday = DayOfMeals()
-        self.sunday = DayOfMeals()
+    monday: DayOfMeals = Field(default_factory=DayOfMeals)
+    tuesday: DayOfMeals = Field(default_factory=DayOfMeals)
+    wednesday: DayOfMeals = Field(default_factory=DayOfMeals)
+    thursday: DayOfMeals = Field(default_factory=DayOfMeals)
+    #friday: DayOfMeals = Field(default_factory=DayOfMeals)
+    #saturday: DayOfMeals = Field(default_factory=DayOfMeals)
+    #sunday: DayOfMeals = Field(default_factory=DayOfMeals)
+
+
+class SimpleJsonMeals(BaseModel):
+    """Represents a simple JSON structure for meals."""
     
-    def __str__(self):
-        days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-        result = "Week of Meals:\n"
-        for day in days:
-            day_attr = day.lower()
-            day_meals = getattr(self, day_attr)
-            result += f"{day}: {day_meals}\n"
-        return result
-    
-    def __repr__(self):
-        return "WeekOfMeals()"
+    breakfast: str
+    lunch: str
+    dinner: str
+
+

@@ -87,9 +87,6 @@ uv run python run.py
 
 # Method 2: Using uvicorn directly
 uv run uvicorn main:app --reload --host 0.0.0.0 --port 8000
-
-# Method 3: Using the start script
-./start.sh
 ```
 
 ### Making API Requests
@@ -170,7 +167,6 @@ Represents a complete week of meal planning.
 meal-planner/
 ├── main.py              # FastAPI application entry point
 ├── run.py               # Development server runner
-├── start.sh             # Quick start script
 ├── models/              # Data models
 │   └── weekOfMeals.py   # Meal planning models
 ├── routers/             # API route handlers
