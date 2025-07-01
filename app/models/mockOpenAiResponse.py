@@ -1,11 +1,10 @@
 from pydantic import BaseModel, Field
-from typing import TypeVar, Generic, Any, Optional
-from models.weekOfMeals import W
-# from mocks.mocks import llm_returns_output_parsed
+from typing import TypeVar, Generic
+from app.models.weekOfMeals import W
 
 
-# Generic type for the parsed output (e.g., WeekOfMeals, etc.)
 T = TypeVar('T')
+
 
 class Usage(BaseModel):
     """Represents token usage information from OpenAI API."""
@@ -20,7 +19,6 @@ class MockOpenAIResponse(BaseModel, Generic[T]):
     
     output_parsed: T = Field(description="The parsed response object")
     usage: Usage = Field(description="Token usage information")
-    output_parsed = Field(default_factory=W)
     
     class Config:
         arbitrary_types_allowed = True

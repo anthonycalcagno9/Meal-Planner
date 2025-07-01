@@ -1,9 +1,9 @@
 from fastapi import FastAPI
-from api import health, generateMealPlan
+from app.api import health, generateMealPlan
 
 app = FastAPI(
     title="Meal Planner API",
-    description="A FastAPI application for managing weekly meal plans",
+    description="A FastAPI application for generating weekly meal plans",
     version="0.1.0"
 )
 
