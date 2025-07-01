@@ -1,45 +1,42 @@
 from typing import Optional, List
 from pydantic import BaseModel, Field
 
-class IngredientData(BaseModel):
+# IngredientData class to represent an ingredient with its name and quantity
+#Using I because that helps keep output shorter for LLMs
+class I(BaseModel):
     """Represents an ingredient with its name and quantity."""
     
-    name: str
-    quantity: str  # e.g., "2 cups", "1 tablespoon", etc.
+    n: str
+    q: str  # e.g., "2 cups", "1 tablespoon", etc.
     
-class MealData(BaseModel):
+#MealData class, shortening to M for brevity in LLM outputs
+class M(BaseModel):
     """Represents a single meal with description, website link, and ingredients."""
     
-    description: Optional[str] = None
-    website: Optional[str] = None
-    ingredients: Optional[List[IngredientData]] = None
+    d: Optional[str] = None
+    l: Optional[str] = None
 
 
-class DayOfMeals(BaseModel):
+#DayOfMeals = D so output is shorter for LLMs
+class D(BaseModel):
     """Represents meals for a single day with breakfast, lunch, and dinner."""
-    
-    breakfast: MealData = Field(default_factory=MealData)
-    lunch: MealData = Field(default_factory=MealData)
-    dinner: MealData = Field(default_factory=MealData)
-    
 
-class WeekOfMeals(BaseModel):
+    b: M = Field(default_factory=M)
+    l: M = Field(default_factory=M)
+    d: M = Field(default_factory=M)
+
+
+#WeekOfMeals = W so output is shorter for LLMs
+class W(BaseModel):
     """Represents a week's worth of meals from Monday to Sunday."""
-    
-    monday: DayOfMeals = Field(default_factory=DayOfMeals)
-    tuesday: DayOfMeals = Field(default_factory=DayOfMeals)
-    wednesday: DayOfMeals = Field(default_factory=DayOfMeals)
-    thursday: DayOfMeals = Field(default_factory=DayOfMeals)
-    #friday: DayOfMeals = Field(default_factory=DayOfMeals)
-    #saturday: DayOfMeals = Field(default_factory=DayOfMeals)
-    #sunday: DayOfMeals = Field(default_factory=DayOfMeals)
 
+    m: D = Field(default_factory=D)
+    #t: D = Field(default_factory=D)
+    #w: D = Field(default_factory=D)
+    #th: D = Field(default_factory=D)
+    #f: D = Field(default_factory=D)
+    #s: D = Field(default_factory=D)
+    #su: D = Field(default_factory=D)
 
-class SimpleJsonMeals(BaseModel):
-    """Represents a simple JSON structure for meals."""
-    
-    breakfast: str
-    lunch: str
-    dinner: str
 
 
