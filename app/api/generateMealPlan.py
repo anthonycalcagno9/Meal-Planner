@@ -17,8 +17,8 @@ class MealPlanRequest(BaseModel):
     class Config:
         json_schema_extra = {
             "example": {
-                "disliked_foods": ["mushrooms", "spinach", "fish"],
-                "prompt": "Create a healthy meal plan focused on low-carb options"
+                "disliked_foods": ["mushrooms", "lamb", "eggplant", "bell peppers", "tofu"],
+                "prompt": "Create a healthy meal plan focused on the paleo diet with a variety of proteins and vegetables."
             }
         }
 
